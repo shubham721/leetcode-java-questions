@@ -54,13 +54,27 @@ public class MaxTreeSumNoAdjacentNode {
 
     public static void main(String[] args) {
 
-        TreeNode root = new TreeNode(10);
-        root.left = new TreeNode(1);
-        root.left.left = new TreeNode(2);
-        root.left.left.left = new TreeNode(1);
-        root.left.right = new TreeNode(3);
-        root.left.right.left = new TreeNode(4);
-        root.left.right.right = new TreeNode(5);
+//        TreeNode root = new TreeNode(10);
+//        root.left = new TreeNode(1);
+//        root.left.left = new TreeNode(2);
+//        root.left.left.left = new TreeNode(1);
+//        root.left.right = new TreeNode(3);
+//        root.left.right.left = new TreeNode(4);
+//        root.left.right.right = new TreeNode(5);
+//        Map<TreeNode, Integer> node = new HashMap<>();
+//        System.out.print(maxSum(root, node));
+
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(4);
+        root.right.right = new TreeNode(8);
+        root.right.right.right = new TreeNode(7);
+        root.left.left = new TreeNode(11);
+//        root.left.left = new TreeNode(2);
+//        root.left.left.left = new TreeNode(1);
+//        root.left.right = new TreeNode(3);
+//        root.left.right.left = new TreeNode(4);
+//        root.left.right.right = new TreeNode(5);
         Map<TreeNode, Integer> node = new HashMap<>();
         System.out.print(maxSum(root, node));
 
